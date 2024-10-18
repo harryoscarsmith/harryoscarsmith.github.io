@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Video Portfolio</h1>
+    <div class="video-gallery">
+      <!-- List of Vimeo videos -->
+      <div class="video-item" data-video="https://player.vimeo.com/video/VIDEO_ID_1">
+        <img src="thumbnail1.jpg" alt="Video 1 Thumbnail">
+      </div>
+      <div class="video-item" data-video="https://player.vimeo.com/video/VIDEO_ID_2">
+        <img src="thumbnail2.jpg" alt="Video 2 Thumbnail">
+      </div>
+      <!-- Add more videos similarly, up to 10 -->
+    </div>
+  </div>
+
+  <!-- Lightbox container -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <iframe id="lightbox-video" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
